@@ -50,6 +50,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 100px 250px;
+    flex-wrap: wrap;
 }
 
 .f-left {
@@ -58,7 +59,9 @@ a {
     display: flex;
     flex-direction: column;
     /* flex: 1; */
+    /* flex-shrink: 1; */
 }
+
 
 .f-image {
     width: 625px;
@@ -113,13 +116,14 @@ a {
     font-weight: bolder;
     font-size: 36px;
     color: #1f2937;
-    margin: 32px 0;
+    margin: 52px 0;
 }
 
 .s-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .info-container {
@@ -127,10 +131,31 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 16px;
+    margin: 52px 0;
 }
 
 .p-container {
     text-align: center;
     width: 250px;
+}
+
+/* Quote */
+
+.q-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    font-weight: 100;
+}
+
+.quote-container {
+    background-color: lightgrey;
+    padding: 64px 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.q-author {
+    font-weight: bolder;
 }
