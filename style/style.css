@@ -1,5 +1,6 @@
 body {
-    background-color: #1F2937;
+    background-color: #f9faf8;
+    margin: 0;
 }
 
 a {
@@ -10,15 +11,22 @@ a {
 
 h2,
 .main-title,
+h1,
 p,
 a {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
+/* Bg color */
+
+.header,
+.first-section {
+    background-color: #1F2937;
+}
+
 /* Header */
 .header {
-    background-color: #1F2937;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,6 +64,7 @@ a {
     width: 625px;
     height: auto;
     border-radius: 25px;
+    border: 7px solid #405572;
 }
 
 .main-title {
@@ -83,4 +92,45 @@ a {
     font-weight: bold;
     font-size: 17px;
     margin: 8px 0;
+}
+
+/* Second section */
+
+.s-image {
+    width: 175px;
+    height: 175px;
+    border-radius: 12px;
+    border: 5px  solid #405572;
+}
+
+.s-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-title {
+    font-weight: bolder;
+    font-size: 36px;
+    color: #1f2937;
+    margin: 32px 0;
+}
+
+.s-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+.p-container {
+    text-align: center;
+    width: 250px;
 }
