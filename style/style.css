@@ -159,3 +159,54 @@ a {
 .q-author {
     font-weight: bolder;
 }
+
+/* Last section */
+
+.last-section {
+    padding: 100px 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-wrapper {
+    width: 850px;
+    border-radius: 8px;
+    background-color: #3882f6;
+    padding: 35px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CTA-text-container,
+.CTA-right-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.CTA-signup {
+    font-size: 18px;
+    font-weight: 600;
+    border:#f9faf8 solid 4px;
+    background-color: #3882f6;
+    padding: 10px 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+.CTA-title {
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.CTA-subtext {
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 0;
+}
