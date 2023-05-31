@@ -145,7 +145,7 @@ a {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
-    font-weight: 100;
+    font-weight: lighter;
 }
 
 .quote-container {
@@ -157,7 +157,7 @@ a {
 }
 
 .q-author {
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 /* Last section */
@@ -209,4 +209,14 @@ a {
     font-size: 17px;
     font-weight: 400;
     margin: 5px 0;
+}
+
+/* footer */
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
 }
