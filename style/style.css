@@ -35,6 +35,7 @@ a {
     justify-content: space-between;
     padding: 0 250px;
     min-width: 564px;
+    background-color: #37306B;
 }
 
 .logo {
@@ -49,11 +50,23 @@ a {
 
 /* First Section */
 
-.first-section {
+.pBg-container {
+    /* background-color: #37306B 0.33; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 200px 250px;
+    padding: 100px 125px;
+    flex-wrap: wrap;
+    min-width: 564px;
+    background-color: #37306B63;
+    border-radius: 35px;
+}
+
+.first-section {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    padding: 100px 125px;
     flex-wrap: wrap;
     min-width: 564px;
     background-image: url(../images/grid.jpg);
@@ -83,14 +96,14 @@ a {
 .main-title {
     font-size: 48px;
     font-weight: bolder;
-    color: #f9faf8;
+    color: #C4B0FF;
     margin: 0;
     width: 525px;
 }
 
 .f-subtext {
     font-size: 18px;
-    color: #e5e7eb;
+    color: #D8C4B6;
     margin: 8px;
     font-weight: lighter;
 }
@@ -158,7 +171,8 @@ a {
     min-width: 564px;
     display: flex;
     flex-direction: column;
-    padding: 0 250px;
+    padding: 100px 250px;
+    background-image: linear-gradient(to bottom, #21296D, #101649);
 }
 
 .s-image {
@@ -202,7 +216,7 @@ a {
 .info-title {
     font-weight: bolder;
     font-size: 36px;
-    color: #1f2937;
+    color: #C4B0FF;
     margin: 52px 0;
 }
 
@@ -224,6 +238,7 @@ a {
 .p-container {
     text-align: center;
     width: 250px;
+    color: #D8C4B6;
 }
 
 /* Quote */
