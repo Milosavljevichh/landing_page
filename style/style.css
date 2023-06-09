@@ -129,47 +129,6 @@ a {
 /* jump-in btn */
 
 
-/* .CTA {
-    padding: 8px 0;
-    border: unset;
-    border-radius: 15px;
-    color: #fff;
-    z-index: 1;
-    background: #3882f6;
-    position: relative;
-    font-weight: 1000;
-    font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms;
-    overflow: hidden;
-    width: 120px;
-    height: auto;
-   }
-
-.CTA:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: #fff;
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms
-   }
-
-.CTA:hover {
-    color: #3882f6;
-   }
-   
-.CTA:hover::before {
-    width: 100%;
-   } */
-
    .CTA {
         padding: 8px 4px;
         border: none;
@@ -318,12 +277,13 @@ a {
     align-items: center;
     justify-content: center;
     min-width: 564px;
+    background-image: linear-gradient(to bottom, #21296D, #101649);
 }
 
 .blue-wrapper {
     width: 850px;
-    border-radius: 8px;
-    background-color: #3882f6;
+    border-radius: 12px;
+    background-color: #C4B0FF60;
     padding: 35px 150px;
     display: flex;
     justify-content: space-between;
@@ -347,50 +307,77 @@ a {
 
 /* SIGN UP btn */
 
-.CTA-signup {
+.button {
     font-size: 18px;
-    font-weight: 600;
-    border:#f9faf8 solid 4px;
-    background-color: #3882f6;
-    padding: 10px 40px;
-    border-radius: 8px;
-    color: white;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-}
-
-.CTA-signup:disabled {
-    pointer-events: none;
-}
-
-.CTA-signup:hover {
-    color: #3882f6;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-4px);
-   }
-
-   .CTA-signup:active {
-    box-shadow: none;
-    transform: translateY(2px);
-   }
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #37306B;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #37306B;
+    background-color: #C4B0FF20;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  .button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #37306B;
+    z-index: -1;
+    border-radius: 7px;
+  }
+  
+  .button:hover, .button:focus {
+    color: #887EC6;
+  }
+  
+  .button:hover:before, .button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .button:active {
+    transform: scale(0.9);
+  }
 
    /* SIGN UP btn */
 
 .CTA-title {
-    color: white;
-    font-size: 19px;
+    color: #37306B;
+    font-size: 23px;
     font-weight: 600;
     margin: 5px 0;
+    text-shadow: #1F293775 2px 2px 5px;
 }
 
 .CTA-subtext {
-    color: white;
-    font-size: 17px;
+    color: #37306B;
+    font-size: 20px;
     font-weight: 400;
     margin: 5px 0;
+    text-shadow: #1F293775 2px 2px 5px;
 }
 
 /* footer */
+
+.footer-subtext {
+    color: wheat;
+}
 
 .footer {
     background-color: #1F2937;
